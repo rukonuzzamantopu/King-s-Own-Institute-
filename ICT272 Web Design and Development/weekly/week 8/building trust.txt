@@ -1,0 +1,98 @@
+Slide 1: Title – Building Trust Through Integrity
+
+Hello everyone,
+Today I will present ACS Code of Ethics in Software Development, focusing on how ethical principles help build trust through integrity.
+
+Slide 2: What is the ACS Code of Ethics?
+
+The ACS Code of Ethics is a set of professional principles and guidelines for computing professionals.
+
+It was developed to ensure that developers make ethical decisions in their daily work.
+It helps translate general ethical values into practical actions.
+
+Slide 3: Why It Matters
+
+The Code is important because it ensures responsible decision-making.
+
+It helps developers act ethically, avoid harm, and maintain trust with users, clients, and society.
+
+Slide 4: Core Ethical Principles
+
+There are eight key principles in the ACS Code of Ethics:
+
+Public Interest
+Client and Employer
+Product Quality
+Judgment
+Management
+Profession
+Colleagues
+Self
+
+These principles guide every professional decision in software development.
+
+Slide 5: Ethics Across Software Lifecycle
+
+Ethics must be applied at every stage of software development:
+
+Design
+Development
+Testing
+Deployment
+
+If ethical issues are ignored early, they can cause bigger problems later.
+So, it is important to include ethics from the beginning.
+
+Slide 6: Privacy & Security
+
+One key ethical focus is privacy and security.
+
+Developers must:
+
+Protect user data
+Minimize data collection
+Ensure strong system security
+Prevent unauthorized access
+
+They should also be transparent about how user data is used.
+
+Slide 7: Competence & Honesty
+
+Another important focus is competence and honesty.
+
+Developers should:
+
+Work only within their skill level
+Continuously improve their knowledge
+Be honest about risks and limitations
+Maintain high-quality standards
+
+Misrepresentation or lack of skill can lead to serious harm.
+
+Slide 8: Upholding Professional Standards
+
+The ACS Code of Ethics is essential for professional practice.
+
+It helps:
+
+Ensure software benefits society
+Prevent harm
+Build trust with users and clients
+
+Ethical behavior is not optional — it is a core responsibility.
+
+Slide 9: Key Takeaway / Conclusion
+
+To conclude,
+The ACS Code of Ethics guides developers to act responsibly throughout the software lifecycle.
+
+By focusing on:
+
+Privacy
+Security
+Competence
+Honesty
+
+Developers can create reliable and ethical software that benefits society.
+
+Thank you.
