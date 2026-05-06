@@ -1,8 +1,17 @@
 import heapq
+import re
 import time
-import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-from matplotlib.colors import LinearSegmentedColormap
+
+try:
+    import matplotlib.pyplot as plt
+    import matplotlib.patches as mpatches
+    from matplotlib.colors import LinearSegmentedColormap
+    HAS_MATPLOTLIB = True
+except ImportError:
+    plt = None
+    mpatches = None
+    LinearSegmentedColormap = None
+    HAS_MATPLOTLIB = False
 
 
 # GOAL STATE  (blank = 0, bottom-right corner)
@@ -207,6 +216,10 @@ def visualize_solution(path, filename="solution_path.png"):
 
     fig.suptitle("8-Puzzle — A* Solution Path (selected steps)",
                  fontsize=13, color='white', fontweight='bold', y=1.01)
+    if not HAS_MATPLOTLIB:
+        print("  Skipping solution visualization because matplotlib is not installed.")
+        return
+
     plt.tight_layout()
     plt.savefig(filename, dpi=150, bbox_inches='tight',
                 facecolor='#263238')
@@ -226,6 +239,10 @@ def visualize_heuristic_comparison(results, filename="heuristic_comparison.png")
 
     x = range(len(labels))
     width = 0.35
+
+    if not HAS_MATPLOTLIB:
+        print("  Skipping heuristic comparison chart because matplotlib is not installed.")
+        return
 
     fig, ax = plt.subplots(figsize=(8, 4.5), facecolor='#263238')
     ax.set_facecolor('#37474F')
@@ -337,24 +354,34 @@ def solve_and_report(initial_state):
     return path_m, results
 
 
+def get_initial_state_from_user():
+    """Prompt the user for an initial 8-puzzle state and validate it."""
+    print("\nEnter the initial puzzle state as 9 numbers from 0 to 8.")
+    print("Use 0 to represent the blank tile, separated by spaces or commas.")
+    print("Example: 1 2 3 4 0 6 7 5 8")
+
+    while True:
+        user_input = input("Initial state: ").strip()
+        tokens = re.split(r"[\s,]+", user_input)
+
+        if len(tokens) != 9:
+            print("Please enter exactly 9 values.")
+            continue
+
+        try:
+            values = [int(token) for token in tokens]
+        except ValueError:
+            print("All values must be integers from 0 to 8.")
+            continue
+
+        if sorted(values) != list(range(9)):
+            print("Values must be a permutation of 0 through 8 with no duplicates.")
+            continue
+
+        return tuple(values)
+
+
 #  Example initial configurations
 if __name__ == "__main__":
-    # Easy configuration (few moves)
-    easy = (1, 2, 3,
-            4, 0, 6,
-            7, 5, 8)
-
-    # Medium difficulty
-    medium = (1, 2, 3,
-              5, 0, 6,
-              4, 7, 8)
-
-    # Hard configuration
-    hard = (8, 1, 3,
-            4, 0, 2,
-            7, 6, 5)
-
-    # ── Change this line to test different configurations 
-    INITIAL = hard
-
+    INITIAL = get_initial_state_from_user()
     solve_and_report(INITIAL)
