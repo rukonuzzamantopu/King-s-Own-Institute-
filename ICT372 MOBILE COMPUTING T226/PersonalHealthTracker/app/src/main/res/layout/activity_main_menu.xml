@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <TextView android:id="@+id/tvWelcome" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/primary" android:textSize="24sp" android:textStyle="bold" />
+        <TextView android:id="@+id/tvProfileSummary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="18dp" android:textColor="@color/text_secondary" android:textSize="13sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:background="@drawable/card_bg" android:text="🔒  Privacy by design • Your health data is stored locally and protected with Android Keystore-backed encryption." android:textColor="@color/text_secondary" android:textSize="12sp" />
+        <Button android:id="@+id/btnExercise" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="18dp" android:layout_marginBottom="10dp" android:backgroundTint="@color/primary" android:text="🏃  Track Exercise" android:textColor="@color/white" />
+        <Button android:id="@+id/btnDiet" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginBottom="10dp" android:backgroundTint="@color/accent" android:text="🍎  Track Diet" android:textColor="@color/white" />
+        <Button android:id="@+id/btnSummary" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginBottom="10dp" android:backgroundTint="@color/primary_dark" android:text="📊  View Summary Report" android:textColor="@color/white" />
+        <Button android:id="@+id/btnMyData" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginBottom="10dp" android:backgroundTint="@color/card_background" android:textColor="@color/text_primary" android:text="👁  My Data — Right to Access" />
+        <Button android:id="@+id/btnPrivacy" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginBottom="10dp" android:backgroundTint="@color/card_background" android:textColor="@color/text_primary" android:text="🔐  Privacy &amp; Data Security" />
+        <Button android:id="@+id/btnEditProfile" android:layout_width="match_parent" android:layout_height="56dp" android:backgroundTint="@color/card_background" android:textColor="@color/text_primary" android:text="✏  Edit Profile" />
+    </LinearLayout>
+</ScrollView>

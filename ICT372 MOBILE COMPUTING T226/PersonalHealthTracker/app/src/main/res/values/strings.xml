@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Personal Health Tracker</string>
+    <string name="title_log_diet">Log Meal / Diet Entry — %1$s</string>
+    <string name="title_log_exercise">Log Exercise Activity — %1$s</string>
+    <string name="title_summary">Summary Report — %1$s</string>
+    <string name="label_summary_default">Summary Report</string>
+    <string name="label_calories_comparison">Calories Consumed vs Burned</string>
+    <string name="label_activity_counts">Activity Counts</string>
+    <string name="btn_back_to_menu">Back to Menu</string>
+    <string name="btn_delete_data">Delete My Data (GDPR Right to Erasure)</string>
+    <string name="welcome_message">Hi, %1$s 👋</string>
+    <string name="profile_summary_format">%1$d yrs • %2$s • %3$.1f cm • %4$.1f kg\nRegistered: %5$s</string>
+    <string-array name="gender_options">
+        <item>Gender</item><item>Female</item><item>Male</item><item>Non-binary</item><item>Prefer not to say</item>
+    </string-array>
+    <string name="err_name_required">Name is required</string>
+    <string name="err_age_required">Age is required</string>
+    <string name="err_age_invalid">Enter a realistic age (1-120)</string>
+    <string name="err_age_number">Age must be a number</string>
+    <string name="err_height_invalid">Enter a realistic height in cm (1-300)</string>
+    <string name="err_height_number">Height must be a number</string>
+    <string name="err_weight_invalid">Enter a realistic weight in kg (1-400)</string>
+    <string name="err_weight_number">Weight must be a number</string>
+    <string name="msg_consent_required">Please consent to local data storage to continue</string>
+    <string name="msg_gender_required">Please select your Gender</string>
+    <string name="msg_profile_saved">Profile saved securely</string>
+    <string name="msg_profile_updated">Profile updated securely</string>
+    <string name="btn_update_profile">Update Profile</string>
+    <string name="btn_save_continue">Save Profile &amp; Continue</string>
+</resources>
